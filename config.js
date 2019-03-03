@@ -64,7 +64,7 @@ else {
  * @Pari get all paths to monitor
  */
 let final = require('./paths/allPaths');
-console.log(final)
+// console.log(final)
 exports.paths = final;
 
 // Paths can also be stored in Firebase! See README for details.
