@@ -2,4 +2,5 @@
 /.idea
 /node_modules
 service-account.json
+fireNation.json
 app.yaml

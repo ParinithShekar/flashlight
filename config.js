@@ -59,25 +59,13 @@ else {
  * Format each path object with the same keys described above, and store the array of paths at whatever
  * location you specified in the FB_PATHS variable. Be sure to restrict that data in your Security Rules.
  ****************************************************/
-exports.paths = [
-  {
-    path : "users",
-    index: "libellus",
-    type : "user",
-    fields: ['fname', 'lname', 'department', 'email']
-  },
-  {
-    path  : "messages",
-    index : "firebase",
-    type  : "message",
-    fields: ['msg', 'name'],
-    filter: function(data) { return data.name !== 'system'; }
-    // see readme
-    //, parser: function(data) { data.msg = data.msg.toLowerCase(); return data; }
-    // see readme
-    //, refBuilder: function(ref, path) { return ref.orderBy(path.sortField).startAt(Date.now()); }
-  }
-];
+
+/**
+ * @Pari get all paths to monitor
+ */
+let final = require('./paths/allPaths');
+console.log(final)
+exports.paths = final;
 
 // Paths can also be stored in Firebase! See README for details.
 //exports.paths = process.env.FB_PATHS || null;
