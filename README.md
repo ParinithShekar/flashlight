@@ -1,4 +1,6 @@
 # Status: Archived
+Additional plugin to sync data from firebase to elasticsearch for a [web application](https://github.com/RaghavRamesh159/Libellus)
+
 This repository has been archived and is no longer maintained.
 
 ![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
